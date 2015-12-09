@@ -2,10 +2,10 @@
     'use strict';
     angular
         .module('angular-image-fallback',[])
-        .directive('imageLoading', imageLoading);
-    imageLoading.$inject = ['$rootScope', '$timeout'];
+        .directive('imageFallback', imageFallback);
+    imageFallback.$inject = ['$rootScope', '$timeout'];
     /* @ngInject */
-    function imageLoading($rootScope, $timeout) {
+    function imageFallback($rootScope, $timeout) {
         var directive = {
             link: link
         };
