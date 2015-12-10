@@ -1,9 +1,9 @@
 {
-  "name": "angular-image-fallback",
+  "name": "ng-image-fallback",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tushariscoolster/angular-image-fallback"
+    "url": "https://github.com/tushariscoolster/ng-image-fallback"
   },
   "devDependencies": {
     "grunt": "^0.4.1",

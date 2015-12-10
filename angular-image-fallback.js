@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('angular-image-fallback',[])
+        .module('ng-image-fallback',[])
         .directive('imageFallback', imageFallback);
     imageFallback.$inject = ['$rootScope', '$timeout'];
     /* @ngInject */

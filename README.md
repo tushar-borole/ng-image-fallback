@@ -1,25 +1,25 @@
-# angular-image-fallback
+# ng-image-fallback
 
-angular-image-fallback is an directive to show missing image and loading image very easily with wasy configuration
+ng-image-fallback is an directive to show missing image and loading image very easily with wasy configuration
 
 ## Getting Started
 
 Install via bower
 
 ```sh
-bower install angular-image-fallback
+bower install ng-image-fallback
 ```
 
 Install via npm
 
 ```sh
-npm install angular-image-fallback
+npm install ng-image-fallback
 ```
 
 Add dependency in your module
 
 ```javascript
-angular.module('yourApp',[   'angular-image-fallback' ]); 
+angular.module('yourApp',[   'ng-image-fallback' ]); 
 ```
 
 
