@@ -29,14 +29,14 @@ module.exports = function (grunt)
                 commitMessage: 'Release v%VERSION%',
                 commitFiles: [
                     'bower.json',
-                    'ng-sweet-alert.js',
+                    'ng-image-fallback.js',
                     'package.json'
                 ],
                 createTag: true,
                 tagName: 'v%VERSION%',
                 tagMessage: 'Version %VERSION%',
                 push: false,
-                pushTo: 'git@github.com:tushariscoolster/ng-sweet-alert.git',
+                pushTo: 'git@github.com:tushariscoolster/ng-image-fallback.git',
                 gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
                 globalReplace: false
             }
