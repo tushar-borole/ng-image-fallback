@@ -17,7 +17,7 @@
                 $timeout(function () {
                     if (angular.isDefined(attrs.ngSrc)) {
                         if (attrs.ngSrc.length > 0) {
-                            //$(element).attr('src', attrs.loadingImage)
+                            $(element).attr('src', attrs.loadingImage)
                             var img = new Image();
                             img.src = attrs.ngSrc;
                             $(img).imagesLoaded()
@@ -25,7 +25,8 @@
 
                                 })
                                 .done(function (instance,image) {
-                                    $(element).attr('src',image.img.src)
+                                    $(element).attr('src',attrs.ngSrc);
+                                scope.$apply();
                                 })
                                 .fail(function () {
                                     console.log('error')
@@ -34,8 +35,14 @@
                                 .progress(function (instance, image) {
                                     var result = image.isLoaded ? 'loaded' : 'broken';
                                     console.log('image is ' + result + ' for ' + image.img.src);
+                                $(element).attr('src', attrs.loadingImage);
                                 });
                         }
+                    }else{
+                        $timeout(function () {
+                        console.log(attrs)
+                        $(element).attr('src', attrs.errorImage)
+                        },100);
                     }
                 })
             })
